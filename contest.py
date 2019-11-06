@@ -94,7 +94,7 @@ def make_testers(contest_id, problems_names):
 
 
 def main():
-    contest_id = "1256"
+    contest_id = sys.argv[1]
     problems = get_problems(contest_id)
     make_templates(contest_id, problems['names'])
     make_tests(contest_id, problems)
